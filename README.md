@@ -13,3 +13,12 @@ robots for space applications.
 2. Clone the repository;
 3. Run `python -m mkdocs serve` in the project root. The changes you make in the
    documentation should be visible in `http://localhost:8000/`;
+
+## Contributing
+
+Iron Man is an open-source project and everyone is welcome to contribute to it.
+There are many different ways to contribute:
+
+- Submit a pull request for an open issue;
+- Create an issue to expand the documentation with new projects or other suggestions;
+- Evaluate pull requests submitted, both technically and syntactically;
