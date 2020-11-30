@@ -1,6 +1,6 @@
 # [Iron Man](https://spacexcorp.github.io/iron-man/)
 
-![Remotely controlled Iron Man suit](/assets/readme-pic.jpg)
+![Remotely controlled Iron Man suit](/images/readme-pic.jpg)
 © Marvel Studios 2013 (left) and © Hybride, 2013 (right).
 
 Documentation of energetically autonomous and highly dynamic anthropomorphic
