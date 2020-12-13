@@ -1,6 +1,6 @@
-# Vakyrie
+# Valkyrie
 
-![Vakyrie Robot](assets/valkyrie-robot.jpg)
+![Valkyrie Robot](assets/valkyrie-robot.jpg)
 
 - total height: 1.87m
 - total weight: 129kg
