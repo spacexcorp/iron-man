@@ -10,8 +10,11 @@ robots for space applications.
 
 1. Make sure to install `python` and `mkdocs` following the instructions in the
    [official documentation](https://www.mkdocs.org/);
-2. Clone the repository;
-3. Run `python -m mkdocs serve` in the project root. The changes you make in the
+2. For the best experience, please install the [Windmill theme for
+   MkDocs](https://github.com/gristlabs/mkdocs-windmill/) either by installing
+   the package (recommended) or cloning the repository;
+3. Clone this repository;
+4. Run `python -m mkdocs serve` in the project root. The changes you make in the
    documentation should be visible in `http://localhost:8000/`;
 
 ## Contributing
