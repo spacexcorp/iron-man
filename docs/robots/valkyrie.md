@@ -109,8 +109,6 @@
 
 ## References
 
-[1] Radford, N.A. et. al. - Valkyrie: NASA’s First Bipedal Humanoid Robot
-<https://sites.utexas.edu/hcrl/files/2016/01/jfr-nasa-hcrl-final.pdf>
+[1] Radford, N.A. et. al. - Valkyrie: NASA’s First Bipedal Humanoid Robot, 2014. [Link.](https://sites.utexas.edu/hcrl/files/2016/01/jfr-nasa-hcrl-final.pdf)
 
-[2] Paine, N et al - Actuator Control for theNASA-JSC Valkyrie Humanoid Robot:A Decoupled Dynamics Approach for Torque Controlof Series Elastic Robots.
-<http://sites.utexas.edu/hcrl/files/2016/01/jfr-valkyrie-actuator-control-final.pdf>
+[2] Paine, N et al - Actuator Control for theNASA-JSC Valkyrie Humanoid Robot:A Decoupled Dynamics Approach for Torque Controlof Series Elastic Robots, 2013. [Link.](http://sites.utexas.edu/hcrl/files/2016/01/jfr-valkyrie-actuator-control-final.pdf)
