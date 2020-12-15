@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Valkyrie - Iron Man</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "General", url: "#_top", children: [
+          ]},
+          {title: "Modules", url: "#modules", children: [
+          ]},
+          {title: "Actuators", url: "#actuators", children: [
+          ]},
+          {title: "Control", url: "#control", children: [
+              {title: "References", url: "#references" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../exoskeletons/bleex/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../exoskeletons/bleex/" class="btn btn-xs btn-link">
+        Bleex
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><img src="../assets/valkyrie-robot.jpg" alt="Valkyrie Robot" style="max-width:300px;"/></p>
+<h1 id="general">General</h1>
+<ul>
+<li>total height: 1.87m</li>
+<li>total weight: 129kg</li>
+<li>type: biped anthropomorphic</li>
+<li>architecture: modular: arm, leg, torso and pelvis can be removed from a single point. Joints architecture is reused whenever possible. The first joint in the arms, legs and waist kinematic chain are all essentially the same actuator. The neck shares the same actuators as the wrist roll but uses traditional rigid actuators form in a pitch-roll-pitch architecture.</li>
+</ul>
+<h1 id="modules">Modules</h1>
+<ul>
+<li>arms:</li>
+<li>shoulder<ul>
+<li>actuators: 3 series elastic actuators whose joint axes share a common point of intersection</li>
+<li>sensors:</li>
+<li>degrees of freedom: 3</li>
+</ul>
+</li>
+<li>elbow:<ul>
+<li>actuators: series elastic actuator for roll.</li>
+<li>sensors:</li>
+<li>degrees of freedom: 1</li>
+</ul>
+</li>
+<li>wrist:<ul>
+<li>actuators: series elastic actuator for roll. Parallel linear actuators with single axis load cells in the two-force member are used for pitch and yaw.</li>
+<li>sensors:</li>
+<li>degrees of freedom: 3</li>
+</ul>
+</li>
+<li>hand:<ul>
+<li>actuators: tendon-driven assemblies</li>
+<li>sensors:</li>
+<li>degrees of freedom: 15 (6 actuated, 9 passive)</li>
+<li>thumb:</li>
+<li>actuators: geared actuator directly drives the thumb roll</li>
+<li>sensors:</li>
+<li>degrees of freedom: 4</li>
+<li>other fingers:</li>
+<li>actuators: primary finger contains passive adduction degree of freedom. Passive elastic elements open the fingers</li>
+<li>sensors:</li>
+<li>degrees of freedom: 3</li>
+</ul>
+</li>
+<li>legs:</li>
+<li>hip:<ul>
+<li>actuators: yaw, roll and pitch implemented with rotary Series Elastic Actuators</li>
+<li>sensors:</li>
+<li>degrees of freedom: 2</li>
+</ul>
+</li>
+<li>knee:<ul>
+<li>actuators: pitch implemented with rotary Series Elastic Actuators</li>
+<li>sensors:</li>
+<li>degrees of freedom: 1</li>
+</ul>
+</li>
+<li>ankle:<ul>
+<li>actuators: pitch and roll with a pair of parallel linear Series Elastic Actuators, similar to the waist</li>
+<li>sensors:</li>
+<li>degrees of freedom: 2</li>
+</ul>
+</li>
+<li>head:</li>
+<li>neck:<ul>
+<li>actuators:</li>
+<li>sensors:</li>
+<li>degrees of freedom: 3</li>
+</ul>
+</li>
+<li>skull:<ul>
+<li>sensors:</li>
+</ul>
+</li>
+<li>torso:</li>
+<li>waist:<ul>
+<li>actuators: pair of parallel Series Elastic Actuators for pitch and roll. Rotary SEA provides yaw motion;</li>
+<li>sensors:</li>
+<li>degrees of freedom: 3</li>
+</ul>
+</li>
+<li>motor control with Turbodriver<ul>
+<li>powers 19 Degrees of Freedom in the torso, pelvis, legs and arms;</li>
+<li>force-air cooled motor bridge;</li>
+<li>30A continuously and 60A for short burst high torque;</li>
+<li>powers and routes signals for multiple sensors;</li>
+<li>has microcontroller and FPGA;</li>
+<li>read embedded force and torque sensors;</li>
+<li>closed loop control based on any sensors combination;</li>
+</ul>
+</li>
+<li>power source:<ul>
+<li>type: dual output voltage battery</li>
+<li>energy: 1.8 kWh</li>
+<li>weight: 14 kg</li>
+<li>power density:</li>
+<li>energy autonomy (whole robot):</li>
+<li>thethered: infinity</li>
+<li>thetherless: 1 hour</li>
+</ul>
+</li>
+<li>sensors:</li>
+</ul>
+<h1 id="actuators">Actuators</h1>
+<ul>
+<li>rotary Series Elastic Actuators</li>
+<li>frameless brushless DC motor;<ul>
+<li>high speed relative encoder on the motor rotor for communication</li>
+<li>rotor attached to harmonic drive wave generator</li>
+<li>stator attached to harmonic drive circular spline;</li>
+</ul>
+</li>
+<li>custom torsion spring between harmonic drive flex cup and joint output;<ul>
+<li>sensor mounted measures only spring deflection;</li>
+</ul>
+</li>
+<li>absolute joint position measured with coaxial magnetic sensor;<ul>
+<li>measure true output and joint input;</li>
+</ul>
+</li>
+<li>belt drive between motor and harmonic;<ul>
+<li>efficiency at high speeds;</li>
+<li>hip and knee extension and flexion only;</li>
+</ul>
+</li>
+<li>linear Series Elastic Actuators</li>
+<li>prepackaged motor with spur gear;</li>
+<li>ball screw nut on a linear slider;</li>
+<li>motor mounted on springs behind the actuator;</li>
+<li>linear deflection measured by 32-bit sensor;</li>
+<li>two force member for parallel actuation across two degress of freedom;<ul>
+<li>position sensing with magnetic absolute position encoders;</li>
+</ul>
+</li>
+</ul>
+<h1 id="control">Control</h1>
+<ul>
+<li>Computation hardware:</li>
+<li>three Intel Core i7 COM Express CPU’s, each with8GB of DDR3 memory;</li>
+<li>CARMA development kit, containing a Tegra3 ARM A9 processor with a NVIDIA Quadro 1000M GPU, for parallel sensor interpretation algorithms;</li>
+<li>Run the high-level robot controllers and process, compress and deliver sensor data;</li>
+<li>Data can be shipped via a wired Ethernet or WiFi connection;</li>
+<li>Control device operated by human:</li>
+<li>
+<p>Automatic controlling algorithms:</p>
+</li>
+<li>
+<p>Series elastic actuators</p>
+</li>
+<li>44 degrees of freedom</li>
+</ul>
+<h2 id="references">References</h2>
+<p>[1] Radford, N.A. et. al. - Valkyrie: NASA’s First Bipedal Humanoid Robot, 2014. <a href="https://sites.utexas.edu/hcrl/files/2016/01/jfr-nasa-hcrl-final.pdf">Link.</a></p>
+<p>[2] Paine, N et al - Actuator Control for theNASA-JSC Valkyrie Humanoid Robot:A Decoupled Dynamics Approach for Torque Controlof Series Elastic Robots, 2013. <a href="http://sites.utexas.edu/hcrl/files/2016/01/jfr-valkyrie-actuator-control-final.pdf">Link.</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../exoskeletons/bleex/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../exoskeletons/bleex/" class="btn btn-xs btn-link">
+        Bleex
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
