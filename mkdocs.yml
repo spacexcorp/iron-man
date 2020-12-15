@@ -1,1 +1,8 @@
 site_name: Iron Man
+theme: "windmill"
+nav:
+  - Home: index.md
+  - Robots:
+      - Valkyrie: robots/valkyrie.md
+  - Exoskeletons:
+      - Bleex: exoskeletons/bleex.md
